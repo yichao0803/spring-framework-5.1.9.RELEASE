@@ -5,7 +5,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 /**
  * @Classname Test
- * @Description TODO
+ * @Description Test
  * @Date 2019/9/30 10:29
  * @Created by Zhangyichao
  */
@@ -25,7 +25,7 @@ public class Test {
 		System.out.println(indexDao);
 
 		indexDao.say();
-		// System.out.println(annotationConfigApplicationContext.getBean(TestService.class));
+		System.out.println(annotationConfigApplicationContext.getBean(TestService.class));
 
 	}
 }

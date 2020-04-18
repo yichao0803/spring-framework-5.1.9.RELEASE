@@ -18,9 +18,9 @@ import org.springframework.stereotype.Component;
 public class ZyccxBeanFactoryPostprocessor implements BeanFactoryPostProcessor {
 	@Override
 	public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
-//		GenericBeanDefinition i =(GenericBeanDefinition)beanFactory.getBeanDefinition("i");
-//		System.out.println(i.getBeanClassName());
-//		i.setBeanClass(TestService.class);
-//		System.out.println(i.getBeanClassName());
+		GenericBeanDefinition a =(GenericBeanDefinition)beanFactory.getBeanDefinition("i");
+		System.out.println(a.getBeanClassName());
+		a.setBeanClass(TestService.class);
+		System.out.println(a.getBeanClassName());
 	}
 }
